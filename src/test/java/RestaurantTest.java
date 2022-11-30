@@ -43,6 +43,14 @@ class RestaurantTest {
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //<<<<<<<<<Failing Test Case>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void returns_the_order_value_given_the_name_of_the_items(){
+        ArrayList menuSelected = new ArrayList<Item>();
+        assertEquals(499,restaurant.getItemTotal(menuSelected));
+    }
+
+    //<<<<<<<<<Failing Test Case>>>>>>>>>>>>>>>>>>>>>
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>MENU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @Test
